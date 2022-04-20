@@ -1,8 +1,13 @@
-.lib-font-face(
-    @family-name: @font-family-name__base,
-    @font-path: '@{baseDir}/fonts/fancy_font',
-    @font-weight: 900,
-    @font-style: italic,
-    @font-display: auto
-);
+//
+//  Common
+//  _____________________________________________
 
+& when (@media-common = true) {
+    .lib-font-face(
+        @family-name:'Fancy Font',
+        @font-path: '@{baseDir}fonts/fancy_font',
+        @font-weight: normal,
+        @font-style: normal,
+        @font-display: swap
+    );
+}
